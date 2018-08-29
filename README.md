@@ -1,4 +1,4 @@
-#Set Up
+#SetUp
 
 clone this repo
 
