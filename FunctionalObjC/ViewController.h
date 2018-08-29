@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (NSNumber *)addNSNumber:(NSNumber *)firstNumber secondNumber:(NSNumber *)secondNumber;
+
 
 @end
 

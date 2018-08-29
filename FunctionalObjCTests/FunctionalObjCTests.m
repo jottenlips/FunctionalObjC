@@ -7,8 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface FunctionalObjCTests : XCTestCase
+
+@property (nonatomic) ViewController *viewController;
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.viewController = [[ViewController alloc] init];
 }
 
 - (void)tearDown {
@@ -24,16 +28,13 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testNSNumberAddition {
+    NSNumber *firstNumber = @7;
+    NSNumber *secondNumber = @11;
+    NSNumber *answer = [self.viewController addNSNumber:firstNumber secondNumber:secondNumber];
+    NSNumber *expectedAns = @18;
+    XCTAssertEqualObjects(answer,expectedAns);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end

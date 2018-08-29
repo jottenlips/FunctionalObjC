@@ -1,0 +1,18 @@
+PODS:
+  - FunctionalObjC (1.0.2)
+  - FunctionalObjC/Tests (1.0.2)
+
+DEPENDENCIES:
+  - FunctionalObjC (~> 1.0)
+  - FunctionalObjC/Tests (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FunctionalObjC
+
+SPEC CHECKSUMS:
+  FunctionalObjC: bd6aaa4b69abea0a5ac0e860a052c1ebebd5311c
+
+PODFILE CHECKSUM: e1f10790d5602c5282746cad654d6e03bb3016ed
+
+COCOAPODS: 1.5.3
